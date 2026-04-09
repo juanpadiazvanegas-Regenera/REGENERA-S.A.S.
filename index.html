@@ -153,10 +153,15 @@
             color: var(--forest-green);
         }
 
-        .logo svg {
-            width: 32px;
-            height: 32px;
-            fill: currentColor;
+        .logo img {
+            height: 60px;
+            width: auto;
+            display: block;
+            transition: var(--transition);
+        }
+
+        nav.scrolled .logo img {
+            height: 50px;
         }
 
         .nav-links {
@@ -868,17 +873,7 @@
     <nav id="navbar">
         <div class="container">
             <a href="#inicio" class="logo">
-                <!-- Hummingbird SVG inspired by the logo -->
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20,50 C20,30 40,10 60,10 C80,10 90,30 90,50 C90,70 70,90 50,90 C30,90 20,70 20,50 Z" fill="none" />
-                    <path d="M50,50 L80,20 M50,50 L80,80 M50,50 L20,50" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                    <path d="M80,20 C85,15 95,15 100,20 L80,20 Z" fill="currentColor" />
-                    <!-- Simplified Hummingbird Shape -->
-                    <path d="M40,60 Q50,30 80,20 Q60,50 40,60 Z" fill="var(--sage)" />
-                    <path d="M40,60 Q30,80 10,70 Q30,60 40,60 Z" fill="var(--forest-green)" />
-                    <circle cx="75" cy="25" r="2" fill="var(--white)" />
-                </svg>
-                REGENERA
+                <img src="/logo.png" alt="REGENERA S.A.S. Logo" referrerPolicy="no-referrer">
             </a>
             <div class="nav-links">
                 <a href="#inicio">Inicio</a>
@@ -1244,14 +1239,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="#inicio" class="logo" style="color: white; margin-bottom: 20px;">
-                        <!-- Hummingbird SVG inspired by the logo -->
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 40px; height: 40px;">
-                            <path d="M40,60 Q50,30 80,20 Q60,50 40,60 Z" fill="var(--sage)" />
-                            <path d="M40,60 Q30,80 10,70 Q30,60 40,60 Z" fill="var(--white)" opacity="0.8" />
-                            <circle cx="75" cy="25" r="2" fill="var(--white)" />
-                        </svg>
-                        REGENERA
+                    <a href="#inicio" class="logo" style="margin-bottom: 20px; background: white; padding: 10px; border-radius: 8px; display: inline-block;">
+                        <img src="/logo.png" alt="REGENERA S.A.S. Logo" style="height: 60px;" referrerPolicy="no-referrer">
                     </a>
                     <p>Restauramos la naturaleza para construir un futuro sostenible en Colombia. Expertos en gestión forestal y compensaciones ambientales.</p>
                     <div class="social-links">
